@@ -1,8 +1,8 @@
 {:paths ["src" "test"]
  :tasks {test {:task (load-file "run_tests.clj")}}
- :deps {com.etzhayyim/kotoba-datom
-        {:git/url "https://github.com/etzhayyim/com-etzhayyim-kotoba-datom.git"
-         :git/sha "3c4b3b92234e59ba285119fd8b2ca4c2ee172ff8"}
+ :deps {kotoba-lang/kotoba-datom
+        {:git/url "https://github.com/kotoba-lang/kotoba-datom.git"
+         :git/sha "65189be44e3753f7a997faadab160ba60720737c"}
         com.etzhayyim/moyai-ledger
         {:git/url "https://github.com/etzhayyim/com-etzhayyim-moyai-ledger.git"
          :git/sha "e379b5b84c29d219750828954610ae572702a28b"}
