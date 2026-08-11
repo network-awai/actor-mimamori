@@ -1,3 +1,4 @@
-{:repository/id "com-etzhayyim-mimamori" :repository/type :actor
+{:repository/id "network-awai/actor-mimamori" :repository/type :actor
+ :repository/aliases ["etzhayyim/com-etzhayyim-mimamori"]
  :actor/id "mimamori" :actor/glyph "見守り" :canonical-format :edn
  :wire-formats #{:json :json-ld :bpmn}}

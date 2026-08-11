@@ -1,4 +1,7 @@
-# mimamori 見守り — mishmeret ha-adam (相互保持者会) covenant keeping membrane
+# network-awai/actor-mimamori — covenant keeping membrane
+
+Canonical repository: `https://github.com/network-awai/actor-mimamori`.
+The former `etzhayyim/com-etzhayyim-mimamori` path is a compatibility redirect.
 
 **ADR**: 2606112300 · **doctrine**: 2606112200 (D3 NEVER-a-throne + D6) · **paper**:
 `90-docs/papers/2606111500` §6 · **sibling**: mishmar storage covenant (2606082100 —
