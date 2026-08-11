@@ -1,0 +1,5 @@
+{:repo/id "network-awai/actor-mimamori"
+ :repo/aliases ["etzhayyim/com-etzhayyim-mimamori"]
+ :repo/role :governed-executable-actor
+ :repo/execution :resident
+ :repo/boundary "Consent-bound human keeping bonds only; no surveillance or scoring, and Tamaki owns artificial-organism evolution."}
