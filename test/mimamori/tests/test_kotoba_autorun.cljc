@@ -2,7 +2,7 @@
   "mimamori R1 tests — kotoba commit-DAG + match cell + autorun heartbeat.
   Port of tests/test_kotoba_autorun.py, plus a Python↔Clojure CID-parity test."
   (:require [clojure.java.io :as io]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is]]
             [kotoba.datom :as kd]
             [mimamori.methods.autorun :as autorun]

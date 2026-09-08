@@ -2,7 +2,7 @@
   "mimamori gate tests — every NEVER clause is asserted as a thrown gate violation.
   Port of tests/test_bond.py."
   (:require [clojure.java.io :as io]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is testing]]
             [mimamori.methods.bond :as bond]))
 

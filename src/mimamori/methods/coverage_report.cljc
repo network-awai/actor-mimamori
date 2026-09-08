@@ -6,7 +6,7 @@
   The report contains COUNTS only. No DID, no per-person line, ever
   (test-enforced: \"did:\" must not appear in the output)."
   (:require [clojure.set :as set]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [mimamori.methods.bond :as bond]))
 
 (defn coverage-of-engine

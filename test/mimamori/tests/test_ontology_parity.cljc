@@ -11,7 +11,7 @@
   (:require [clojure.test :refer [deftest is]]
             [clojure.set :as set]
             #?(:clj [clojure.java.io :as io])
-            #?(:clj [clojure.string :as str])
+            #?(:clj [kotoba.lang.text :as str])
             [mimamori.methods.-edn :as edn]
             [mimamori.methods.bond :as bond]
             [mimamori.methods.coverage-report :as cov]

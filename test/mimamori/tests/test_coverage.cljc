@@ -2,7 +2,7 @@
   "mimamori coverage tests — aggregate-only (G5): no DID ever appears in the report.
   Port of tests/test_coverage.py."
   (:require [clojure.java.io :as io]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is]]
             [mimamori.methods.bond :as bond]
             [mimamori.methods.coverage-report :as cov]))

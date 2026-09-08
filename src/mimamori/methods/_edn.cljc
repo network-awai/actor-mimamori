@@ -8,7 +8,7 @@
   both sides. Stdlib only; pure.
 
   Faithful to the Python module: tokens / atom / parse / load-edn."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; The Python regex: r'[\s,]+|;[^\n]*|(\[|\]|\{|\}|"(?:\\.|[^"\\])*"|[^\s,\[\]{}]+)'
 ;; group(1) is nil for whitespace/comment runs; the captured token otherwise.
