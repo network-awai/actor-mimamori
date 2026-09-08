@@ -16,7 +16,7 @@
   The engine is a pure value (plain map); every lifecycle op returns the next
   engine. Deterministic: tx = event cycle (no wall clock). Portable .cljc —
   runnable on JVM/babashka/SCI and the kotoba-clj WASM trajectory."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             #?(:clj [clojure.edn :as edn])))
 
 ;; ── schema (the whole representable surface) ─────────────────────
@@ -49,7 +49,7 @@
   (doseq [p forbidden-attr-prefixes]
     (when (str/starts-with? attr p)
       (throw (gate-violation (str "G2: person-node attribute unrepresentable: " attr)))))
-  (let [low (str/lower-case attr)]
+  (let [low (str/lower attr)]
     (doseq [t forbidden-tokens]
       (when (str/includes? low t)
         (throw (gate-violation (str "G2: score-of-soul token unrepresentable: " attr))))))

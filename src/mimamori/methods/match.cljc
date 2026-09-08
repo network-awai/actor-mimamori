@@ -15,7 +15,7 @@
 
   Deterministic: candidates are sorted; assignment is round-robin over the
   least-loaded willing keepers. No wall clock, no randomness."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [mimamori.methods.bond :as bond]))
 
 (def max-kept

@@ -3,7 +3,7 @@
   Port of tests/test_cell.py."
   (:require [clojure.java.io :as io]
             [clojure.edn :as edn]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is]]
             [mimamori.cell :as cell]))
 

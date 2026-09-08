@@ -2,7 +2,7 @@
   "mimamori social-capital bridge tests — moyai-family invariants + keeper-only mint.
   Port of tests/test_shakai.py."
   (:require [clojure.java.io :as io]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is]]
             [mimamori.methods.autorun :as autorun]
             [mimamori.methods.bond :as bond]
