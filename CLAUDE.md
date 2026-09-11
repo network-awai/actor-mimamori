@@ -80,7 +80,7 @@ mimamori/
 ## Run
 
 ```bash
-bb test
+kbb -M:test
 ```
 
 ## Standalone multirepo contract
