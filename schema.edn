@@ -8,7 +8,7 @@
 ;;
 ;; CONSTITUTIONAL SHAPE (read first): this namespace is BOND-EDGE-ONLY. There are NO
 ;; person-node attributes — :mishmeret.person/* DOES NOT EXIST and the runtime validator
-;; (src/mimamori/methods/bond.cljc ATTR_WHITELIST) raises on it and on any score/risk/
+;; (src/mimamori/methods/bond.cljk ATTR_WHITELIST) raises on it and on any score/risk/
 ;; isolation/danger/rating token (G2 no-score-of-soul; ADR-2606112200 D4 yir'ah bundle).
 ;; The degeneration path (五人組 → 隣組 → Stasi IM → social credit) is unrepresentable,
 ;; not prohibited:
