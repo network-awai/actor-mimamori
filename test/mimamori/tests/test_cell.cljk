@@ -2,7 +2,7 @@
   "mimamori cell-runner entry tests — fire contract + registry consistency.
   Port of tests/test_cell.py."
   (:require [clojure.java.io :as io]
-            [clojure.edn :as edn]
+            [kotoba.lang.edn :as edn]
             [kotoba.lang.text :as str]
             [kotoba.test :refer [deftest is]]
             [mimamori.cell :as cell]))
