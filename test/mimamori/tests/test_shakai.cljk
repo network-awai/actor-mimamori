@@ -3,7 +3,7 @@
   Port of tests/test_shakai.py."
   (:require [clojure.java.io :as io]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is]]
+            [kotoba.test :refer [deftest is]]
             [mimamori.methods.autorun :as autorun]
             [mimamori.methods.bond :as bond]
             [mimamori.methods.shakai :as shakai]

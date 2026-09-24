@@ -11,7 +11,7 @@
   architecture). Run: bb test:mimamori.
 
   (No __main__ CLI dispatch: the Python `t(...)`/argv harness is replaced by deftest.)"
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [cheshire.core :as json]
             #?(:clj [clojure.java.io :as io])
             #?(:clj [kotoba.lang.text :as str])
