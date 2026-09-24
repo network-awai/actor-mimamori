@@ -14,7 +14,7 @@
   aggregate-only (G5): counts and CIDs, never a DID."
   (:require [mimamori.methods.autorun :as autorun]
             [mimamori.methods.bond :as bond]
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 #?(:clj
    (defn- actor-dir

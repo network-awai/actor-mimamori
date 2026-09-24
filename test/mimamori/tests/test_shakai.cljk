@@ -1,7 +1,7 @@
 (ns mimamori.tests.test-shakai
   "mimamori social-capital bridge tests — moyai-family invariants + keeper-only mint.
   Port of tests/test_shakai.py."
-  (:require [clojure.java.io :as io]
+  (:require [kotoba.io :as io]
             [kotoba.lang.text :as str]
             [kotoba.test :refer [deftest is]]
             [mimamori.methods.autorun :as autorun]
@@ -16,8 +16,8 @@
   (bond/load-seed-file (io/file (System/getProperty "user.dir") "data" "seed-mimamori-bonds.edn")))
 
 (defn- tmplog []
-  (str (java.nio.file.Files/createTempDirectory
-        "mimamori-shakai" (make-array java.nio.file.attribute.FileAttribute 0))
+  (str (io/temp-dir
+        "mimamori-shakai")
        "/log.kotoba.edn"))
 
 (deftest mint-per-consented-act

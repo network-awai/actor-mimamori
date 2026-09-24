@@ -5,7 +5,7 @@
   誰の保持者でもない人間を作らない — measured without naming anyone.
   The report contains COUNTS only. No DID, no per-person line, ever
   (test-enforced: \"did:\" must not appear in the output)."
-  (:require [clojure.set :as set]
+  (:require [kotoba.lang.coll :as set]
             [kotoba.lang.text :as str]
             [mimamori.methods.bond :as bond]))
 

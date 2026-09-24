@@ -1,7 +1,7 @@
 (ns mimamori.tests.test-bond
   "mimamori gate tests — every NEVER clause is asserted as a thrown gate violation.
   Port of tests/test_bond.py."
-  (:require [clojure.java.io :as io]
+  (:require [kotoba.io :as io]
             [kotoba.lang.text :as str]
             [kotoba.test :refer [deftest is testing]]
             [mimamori.methods.bond :as bond]))
