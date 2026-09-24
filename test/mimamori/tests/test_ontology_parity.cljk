@@ -9,8 +9,8 @@
 
   (No __main__ demo: the Python `t(...)`/`print` harness is replaced by deftest.)"
   (:require [kotoba.test :refer [deftest is]]
-            [clojure.set :as set]
-            #?(:clj [clojure.java.io :as io])
+            [kotoba.lang.coll :as set]
+            #?(:clj [kotoba.io :as io])
             #?(:clj [kotoba.lang.text :as str])
             [mimamori.methods.-edn :as edn]
             [mimamori.methods.bond :as bond]

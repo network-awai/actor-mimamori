@@ -1,7 +1,7 @@
 (ns mimamori.tests.test-kotoba-autorun
   "mimamori R1 tests — kotoba commit-DAG + match cell + autorun heartbeat.
   Port of tests/test_kotoba_autorun.py, plus a Python↔Clojure CID-parity test."
-  (:require [clojure.java.io :as io]
+  (:require [kotoba.io :as io]
             [kotoba.lang.text :as str]
             [kotoba.test :refer [deftest is]]
             [kotoba.datom :as kd]
@@ -13,8 +13,8 @@
   (bond/load-seed-file (io/file (System/getProperty "user.dir") "data" "seed-mimamori-bonds.edn")))
 
 (defn- tmplog []
-  (str (java.nio.file.Files/createTempDirectory
-        "mimamori-clj" (make-array java.nio.file.attribute.FileAttribute 0))
+  (str (io/temp-dir
+        "mimamori-clj")
        "/log.kotoba.edn"))
 
 (deftest match-closes-gap

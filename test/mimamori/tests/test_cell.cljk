@@ -1,15 +1,15 @@
 (ns mimamori.tests.test-cell
   "mimamori cell-runner entry tests — fire contract + registry consistency.
   Port of tests/test_cell.py."
-  (:require [clojure.java.io :as io]
+  (:require [kotoba.io :as io]
             [kotoba.lang.edn :as edn]
             [kotoba.lang.text :as str]
             [kotoba.test :refer [deftest is]]
             [mimamori.cell :as cell]))
 
 (defn- tmplog []
-  (str (java.nio.file.Files/createTempDirectory
-        "mimamori-cell" (make-array java.nio.file.attribute.FileAttribute 0))
+  (str (io/temp-dir
+        "mimamori-cell")
        "/log.kotoba.edn"))
 
 (deftest fire-runs-one-cycle

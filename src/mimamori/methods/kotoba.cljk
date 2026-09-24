@@ -23,7 +23,7 @@
   EAVT = [:db/add entity attribute value] -- :db/add only (no retract; exit is
   itself an appended state datom). Deterministic (caller supplies tx-id + as-of)."
   (:require [kotoba.datom :as kd]
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 #?(:clj
    (def log-default
