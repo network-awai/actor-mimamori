@@ -3,7 +3,7 @@
   Port of tests/test_kotoba_autorun.py, plus a Python↔Clojure CID-parity test."
   (:require [clojure.java.io :as io]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is]]
+            [kotoba.test :refer [deftest is]]
             [kotoba.datom :as kd]
             [mimamori.methods.autorun :as autorun]
             [mimamori.methods.bond :as bond]

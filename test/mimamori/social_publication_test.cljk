@@ -1,5 +1,5 @@
 (ns mimamori.social-publication-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [mimamori.cells.social-post.state-machine :as cell]
             [mimamori.methods.social :as social]))
 

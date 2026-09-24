@@ -3,7 +3,7 @@
   Port of tests/test_bond.py."
   (:require [clojure.java.io :as io]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is testing]]
+            [kotoba.test :refer [deftest is testing]]
             [mimamori.methods.bond :as bond]))
 
 (def A "did:web:etzhayyim.com:member:fictional:aleph")

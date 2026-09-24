@@ -8,7 +8,7 @@
   Python test makes. Run: bb test:mimamori.
 
   (No __main__ demo: the Python `t(...)`/`print` harness is replaced by deftest.)"
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [clojure.set :as set]
             #?(:clj [clojure.java.io :as io])
             #?(:clj [kotoba.lang.text :as str])

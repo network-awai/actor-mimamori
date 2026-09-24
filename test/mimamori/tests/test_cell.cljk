@@ -4,7 +4,7 @@
   (:require [clojure.java.io :as io]
             [clojure.edn :as edn]
             [kotoba.lang.text :as str]
-            [clojure.test :refer [deftest is]]
+            [kotoba.test :refer [deftest is]]
             [mimamori.cell :as cell]))
 
 (defn- tmplog []
